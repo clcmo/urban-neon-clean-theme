@@ -33,6 +33,8 @@
   "icon": "assets/icon.png",
   "scripts": {
     "build:icon": "node --experimental-strip-types src/cli/generate-icon.ts",
+    "build:readme": "node scripts/build-readme.mjs",
+    "build:site": "node scripts/build-site.mjs",
     "build:themes": "node --experimental-strip-types src/cli/build.ts",
     "test": "node --experimental-strip-types --test src/**/*.test.ts",
     "package:vsix": "npx @vscode/vsce package --no-dependencies"
