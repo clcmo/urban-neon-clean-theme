@@ -72,6 +72,5 @@ jobs:
         run: npx @vscode/vsce publish --oidc --packagePath urban-neon-clean-theme-*.vsix
 
       - name: Publish to Open VSX Registry
-        env:
-          OVSX_PAT: ${{ secrets.OVSX_PAT }}
-        run: npx ovsx publish urban-neon-clean-theme-*.vsix -p "$OVSX_PAT"
+        run: 
+          npx ovsx publish --trusted-publishing urban-neon-clean-theme-*.vsix
