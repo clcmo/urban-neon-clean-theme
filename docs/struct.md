@@ -1,7 +1,7 @@
 urban-vs-theme/
 ├── .github/
 │   └── workflows/
-│       └── build-and-package.yml
+│       └── release.yml
 ├── src/
 │   ├── domain/
 │   │   ├── ThemeModels.ts

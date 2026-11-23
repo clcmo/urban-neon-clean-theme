@@ -9,7 +9,7 @@ Site publicado: {{PAGES_URL}}
 
 ## Usando este tema
 
-O tema pode ser instalado pela seção de Releases ou diretamente pela fonte do projeto.
+O tema pode ser instalado pela loja do VS Code, em breve também pelo Open VSX, pela seção de Releases ou diretamente pela fonte do projeto.
 
 ## Começando
 
@@ -18,15 +18,27 @@ Este é um tema criado com a arquitetura clean, para estilizar a sua jornada dev
 ### Pré-requisitos
 
 - Visual Studio Code 1.85 ou superior
-- Node.js 22 ou superior
-- npm
+- Node.js 22 ou superior (apenas para desenvolvimento ou instalação a partir do código-fonte)
+- npm (idem)
 
 ### Instalação
+
+#### Pela loja do VS Code (recomendado)
+
+Acesse a página do tema no [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=clcmo.urban-neon-clean-theme) e clique em **Install**. Também é possível buscar por **Urban Neon** na aba de extensões do próprio VS Code.
+
+#### Pelo Open VSX (em breve)
+
+A publicação no [Open VSX](https://open-vsx.org/extension/clcmo/urban-neon-clean-theme) será lançada em breve. Ela atende editores compatíveis com o VS Code que não usam o Marketplace da Microsoft, como o VSCodium.
+
+#### Por arquivo `.vsix`
 
 1. Baixe o arquivo `.vsix` da seção [Releases](https://github.com/clcmo/urban-neon-clean-theme/releases).
 2. No VS Code, abra a paleta de comandos com `Ctrl+Shift+P` no Windows/Linux ou `Cmd+Shift+P` no macOS.
 3. Execute **Extensions: Install from VSIX...** e selecione o arquivo baixado.
 4. Reinicie o VS Code, se necessário.
+
+#### A partir do código-fonte
 
 Para instalar uma versão local clonada do projeto:
 
@@ -36,7 +48,7 @@ cd urban-neon-clean-theme
 npm ci
 npm run build:themes
 npm run package:vsix
-code --install-extension urban-neon-clean-theme-0.1.0.vsix
+code --install-extension dist/urban-neon-clean-theme.vsix
 ```
 
 ## Uso
