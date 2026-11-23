@@ -1,28 +1,40 @@
 {
-  "name": "template-clcmo",
-  "version": "0.0.0-development",
-  "private": true,
-  "type": "module",
-  "description": "Template de projeto com CI/CD, GitHub Pages, README gerado e versões em PT-BR e EN",
+  "name": "urban-neon-clean-theme",
+  "displayName": "Urban Neon Clean Theme (Dark & Light)",
+  "description": "Temas Dark e Light para VS Code com contraste WCAG validado e Clean Architecture.",
+  "version": "0.1.0",
+  "publisher": "clcmo",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/clcmo/template.git"
+    "url": "https://github.com/clcmo/vscode-theme-clean-arch.git"
   },
-  "author": "Camila <milla@apprendendo.blog>",
-  "license": "MIT",
   "engines": {
-    "node": "^22.14.0 || >=24.10.0"
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Urban Neon Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/urban-neon-dark.json"
+      },
+      {
+        "label": "Urban Neon Light",
+        "uiTheme": "vs",
+        "path": "./themes/urban-neon-light.json"
+      }
+    ]
   },
   "scripts": {
-    "build:readme": "node scripts/build-readme.mjs",
-    "build:site": "node scripts/build-site.mjs",
-    "build": "npm run build:readme && npm run build:site",
-    "release": "semantic-release"
+    "build:themes": "node --experimental-strip-types src/cli/build.ts",
+    "package:vsix": "npx @vscode/vsce package --no-dependencies"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^7.0.0",
-    "@semantic-release/git": "^11.0.1",
-    "marked": "^18.2.0",
-    "semantic-release": "^25.0.9"
+    "@vscode/vsce": "^3.2.0",
+    "typescript": "^5.7.0"
   }
 }
