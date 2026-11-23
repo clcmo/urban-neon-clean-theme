@@ -8,10 +8,11 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/clcmo/vscode-theme-clean-arch.git"
+    "url": "git+https://github.com/clcmo/urban-neon-clean-theme.git"
   },
   "engines": {
-    "vscode": "^1.85.0"
+    "vscode": "^1.85.0",
+    "node": ">=22.18"
   },
   "categories": [
     "Themes"
@@ -36,8 +37,9 @@
     "build:readme": "node scripts/build-readme.mjs",
     "build:site": "node scripts/build-site.mjs",
     "build:themes": "node --experimental-strip-types src/cli/build.ts",
-    "test": "node --experimental-strip-types --test src/**/*.test.ts",
-    "package:vsix": "npx @vscode/vsce package --no-dependencies"
+    "test": "node --experimental-strip-types --test \"src/**/*.test.ts\"",
+    "package:vsix": "node -e \"fs.mkdirSync('dist',{recursive:true})\" && npx @vscode/vsce package --no-dependencies --out dist/urban-neon-clean-theme.vsix",
+    "validate:themes": "node scripts/validate-themes.mjs"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
@@ -45,13 +47,10 @@
     "@resvg/resvg-js": "^2.6.2",
     "@vscode/vsce": "^4.1.1",
     "marked": "^18.2.1",
-    "release-please": "^17.11.2",
     "typescript": "^5.7.0"
   },
-  "dependencies": {
-    "@semantic-release/commit-analyzer": "^10.0.1",
-    "@semantic-release/github": "^10.0.1",
-    "@semantic-release/release-notes-generator": "^10.0.1"
+  "bugs": {
+    "url": "https://github.com/clcmo/urban-neon-clean-theme/issues"
   },
-  "test": "node --experimental-strip-types --test src/**/*.test.ts"
+  "homepage": "https://github.com/clcmo/urban-neon-clean-theme#readme"
 }

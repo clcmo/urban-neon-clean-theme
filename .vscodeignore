@@ -1,0 +1,21 @@
+# Só o necessário vai para o .vsix: package.json, README, CHANGELOG, LICENSE, ícone e temas.
+.github/**
+.vscode/**
+_site/**
+dist/**
+content/**
+docs/**
+scripts/**
+src/**
+node_modules/**
+.gitignore
+.nvmrc
+.releaserc.json
+release-please-config.json
+.release-please-manifest.json
+package-lock.json
+tsconfig*.json
+**/*.test.ts
+**/*.ts
+**/*.map
+*.vsix

@@ -1,6 +1,8 @@
 # Dependências e artefatos locais
 node_modules/
 *.vsix
+dist/
+_site/
 *.tsbuildinfo
 
 # Logs e cache local

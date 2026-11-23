@@ -1,4 +1,4 @@
-name: Generate CI artifacts
+name: CI
 run-name: CI em ${{ github.ref_name }} por ${{ github.actor }}
 
 on:
@@ -15,17 +15,33 @@ concurrency:
 
 jobs:
   build:
-    name: Build (README + site)
+    name: Build, testes e pacote
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
 
       - uses: actions/setup-node@v7
         with:
-          node-version: 24
+          node-version-file: .nvmrc
           cache: npm
 
       - run: npm ci
+
+      # Temas: gera, valida contraste WCAG (o build falha se reprovar) e confere se o versionado está em dia.
+      - name: Gerar temas
+        run: npm run build:themes
+
+      - name: Verificar temas versionados
+        run: git diff --exit-code -- themes
+
+      - name: Gerar ícone
+        run: npm run build:icon
+
+      - name: Validar ícone e JSON dos temas
+        run: npm run validate:themes
+
+      - name: Testes
+        run: npm test
 
       # Falha se content/pt-br.md e content/en.md tiverem estruturas diferentes
       # ou campos obrigatórios ausentes.
@@ -41,3 +57,12 @@ jobs:
         run: npm run build:site
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
+
+      - name: Empacotar .vsix
+        run: npm run package:vsix
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: urban-neon-clean-theme-vsix
+          path: dist/*.vsix
+          if-no-files-found: error
