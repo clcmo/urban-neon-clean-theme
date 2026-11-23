@@ -43,7 +43,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@resvg/resvg-js": "^2.6.2",
-    "@vscode/vsce": "^4.1.1",
+    "@vscode/vsce": "^3.9.1",
     "release-please": "^17.11.2",
     "typescript": "^5.7.0"
   },
