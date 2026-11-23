@@ -37,8 +37,8 @@
     "release:dry-run": "npx release-please release-pr --dry-run --repo-url=https://github.com/clcmo/vscode-theme-clean-arch --token=${GITHUB_TOKEN:-local}"
   },
   "devDependencies": {
-    "@vscode/vsce": "^3.2.0",
-    "release-please": "^14.8.0",
-    "typescript": "^5.7.0"
+    "@vscode/vsce": "^4.1.1",
+    "release-please": "^17.11.2",
+    "typescript": "^7.0.2"
   }
 }
