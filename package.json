@@ -31,10 +31,12 @@
   },
   "scripts": {
     "build:themes": "node --experimental-strip-types src/cli/build.ts",
-    "package:vsix": "npx @vscode/vsce package --no-dependencies"
+    "package:vsix": "npx @vscode/vsce package --no-dependencies",
+    "release:dry-run": "npx release-please release-pr --dry-run --repo-url=https://github.com/clcmo/vscode-theme-clean-arch --token=${GITHUB_TOKEN:-local}"
   },
   "devDependencies": {
     "@vscode/vsce": "^3.2.0",
+    "release-please": "^14.8.0",
     "typescript": "^5.7.0"
   }
 }
