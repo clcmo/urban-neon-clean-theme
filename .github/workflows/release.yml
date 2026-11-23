@@ -31,12 +31,13 @@ jobs:
         uses: googleapis/release-please-action@v4
         with:
           release-type: node
-          package-name: urban-neon-clean-theme
-          bump-minor-pre-major: true
 
   package-and-publish:
     if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
     steps:
       - name: Checkout tag
         uses: actions/checkout@v4
@@ -50,11 +51,14 @@ jobs:
       - name: Install dependencies cleanly
         run: npm ci
 
-      - name: Run unit tests
-        run: npm test
+      - name: Generate 128x128 PNG icon with Font Awesome
+        run: npm run build:icon
 
       - name: Build and validate themes
         run: npm run build:themes
+
+      - name: Run unit and integration tests
+        run: npm test
 
       - name: Package .vsix
         run: npm run package:vsix
@@ -65,9 +69,7 @@ jobs:
           files: "*.vsix"
 
       - name: Publish to VS Code Marketplace
-        env:
-          VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: npx @vscode/vsce publish --packagePath urban-neon-clean-theme-*.vsix -p "$VSCE_PAT"
+        run: npx @vscode/vsce publish --oidc --packagePath urban-neon-clean-theme-*.vsix
 
       - name: Publish to Open VSX Registry
         env:

@@ -17,14 +17,27 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies cleanly
+        run: npm ci
+
+      - name: Generate 128x128 PNG icon with Font Awesome
+        run: npm run build:icon
 
       - name: Generate and validate WCAG contrast for Dark & Light themes
         run: npm run build:themes
 
-      - name: Validate generated JSON syntax
+      - name: Run unit and integration tests
+        run: npm test
+
+      - name: Validate generated JSON syntax and icon asset
         run: |
           node -e '
             const fs = require("fs");
+            if (!fs.existsSync("assets/icon.png")) {
+              throw new Error("Missing generated icon: assets/icon.png");
+            }
             for (const f of ["themes/urban-neon-dark.json", "themes/urban-neon-light.json"]) {
               const data = JSON.parse(fs.readFileSync(f, "utf8"));
               if (!data.colors || !data.tokenColors) throw new Error("Invalid theme: " + f);

@@ -30,20 +30,25 @@
       }
     ]
   },
+  "icon": "assets/icon.png",
   "scripts": {
-    "build:readme": "node scripts/build-readme.mjs",
-    "build:site": "node scripts/build-site.mjs",
+    "build:icon": "node --experimental-strip-types src/cli/generate-icon.ts",
     "build:themes": "node --experimental-strip-types src/cli/build.ts",
-    "package:vsix": "npx @vscode/vsce package --no-dependencies",
-    "release:dry-run": "npx release-please release-pr --dry-run --repo-url=https://github.com/clcmo/vscode-theme-clean-arch --token=${GITHUB_TOKEN:-local}",
-    "test": "node --experimental-strip-types --test src/**/*.test.ts"
+    "test": "node --experimental-strip-types --test src/**/*.test.ts",
+    "package:vsix": "npx @vscode/vsce package --no-dependencies"
   },
   "devDependencies": {
-    "@types/node": "^26.6.6",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@resvg/resvg-js": "^2.6.2",
     "@vscode/vsce": "^4.1.1",
-    "marked": "^18.2.1",
     "release-please": "^17.11.2",
-    "typescript": "^7.0.2"
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "@semantic-release/commit-analyzer": "^10.0.1",
+    "@semantic-release/github": "^10.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.1"
   },
   "test": "node --experimental-strip-types --test src/**/*.test.ts"
 }
