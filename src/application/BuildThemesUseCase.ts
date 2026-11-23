@@ -89,7 +89,36 @@ export class BuildThemesUseCase {
         "terminal.ansiBlue": palette.accentInfo,
         "terminal.ansiMagenta": palette.accentPrimary,
         "terminal.ansiCyan": palette.accentSecondary,
-        "terminal.ansiWhite": palette.fgPrimary
+        "terminal.ansiWhite": palette.fgPrimary,
+
+        // Minimap & Breadcrumb
+        "minimap.background": palette.bgSecondary,
+        "minimap.selectionHighlight": palette.bgSelection,
+        "minimap.findMatchHighlight": palette.accentWarning,
+        "breadcrumb.background": palette.bgPrimary,
+        "breadcrumb.foreground": palette.fgMuted,
+        "breadcrumb.focusForeground": palette.fgPrimary,
+        "breadcrumb.activeSelectionForeground": palette.accentSecondary,
+
+        // Debug Console
+        "debugConsole.background": palette.bgSecondary,
+        "debugConsole.foreground": palette.fgPrimary,
+        "debugConsoleInputIcon.foreground": palette.accentPrimary,
+        "debugTokenExpression.name": palette.accentSecondary,
+        "debugTokenExpression.value": palette.accentSuccess,
+        "debugTokenExpression.string": palette.accentSecondary,
+        "debugTokenExpression.number": palette.accentWarning,
+        "debugTokenExpression.error": palette.accentError,
+
+        // Merge Conflicts
+        "merge.currentHeaderBackground": `${palette.accentSuccess}38`,
+        "merge.currentContentBackground": `${palette.accentSuccess}18`,
+        "merge.incomingHeaderBackground": `${palette.accentInfo}38`,
+        "merge.incomingContentBackground": `${palette.accentInfo}18`,
+        "merge.border": palette.borderSubtle,
+        "editorOverviewRuler.currentContentForeground": palette.accentSuccess,
+        "editorOverviewRuler.incomingContentForeground": palette.accentInfo,
+        "editorOverviewRuler.commonContentForeground": palette.accentWarning
       },
       tokenColors: [
         {

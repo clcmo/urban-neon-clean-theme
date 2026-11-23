@@ -1,3 +1,12 @@
+# Dependências e artefatos locais
 node_modules/
-_site/
+*.vsix
+*.tsbuildinfo
+
+# Logs e cache local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .DS_Store
+
+# Nota: package-lock.json e themes/*.json permanecem versionados para builds reproduzíveis

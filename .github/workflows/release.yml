@@ -31,8 +31,10 @@ jobs:
         uses: googleapis/release-please-action@v4
         with:
           release-type: node
+          package-name: urban-neon-clean-theme
+          bump-minor-pre-major: true
 
-  package-on-tag:
+  package-and-publish:
     if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     steps:
@@ -48,6 +50,9 @@ jobs:
       - name: Install dependencies cleanly
         run: npm ci
 
+      - name: Run unit tests
+        run: npm test
+
       - name: Build and validate themes
         run: npm run build:themes
 
@@ -58,3 +63,13 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: "*.vsix"
+
+      - name: Publish to VS Code Marketplace
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: npx @vscode/vsce publish --packagePath urban-neon-clean-theme-*.vsix -p "$VSCE_PAT"
+
+      - name: Publish to Open VSX Registry
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
+        run: npx ovsx publish urban-neon-clean-theme-*.vsix -p "$OVSX_PAT"

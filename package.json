@@ -35,12 +35,15 @@
     "build:site": "node scripts/build-site.mjs",
     "build:themes": "node --experimental-strip-types src/cli/build.ts",
     "package:vsix": "npx @vscode/vsce package --no-dependencies",
-    "release:dry-run": "npx release-please release-pr --dry-run --repo-url=https://github.com/clcmo/vscode-theme-clean-arch --token=${GITHUB_TOKEN:-local}"
+    "release:dry-run": "npx release-please release-pr --dry-run --repo-url=https://github.com/clcmo/vscode-theme-clean-arch --token=${GITHUB_TOKEN:-local}",
+    "test": "node --experimental-strip-types --test src/**/*.test.ts"
   },
   "devDependencies": {
+    "@types/node": "^26.6.6",
     "@vscode/vsce": "^4.1.1",
     "marked": "^18.2.1",
     "release-please": "^17.11.2",
     "typescript": "^7.0.2"
-  }
+  },
+  "test": "node --experimental-strip-types --test src/**/*.test.ts"
 }
