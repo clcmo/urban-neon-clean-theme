@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/clcmo/urban-neon-clean-theme/compare/v1.1.0...v1.1.1) (2026-11-23)
+
+
+### Bug Fixes
+
+* improve installation instructions and clarify prerequisites in README ([1a93109](https://github.com/clcmo/urban-neon-clean-theme/commit/1a93109c5373a0526f3b16248252866e4f2177c0))
+* update documentation and installation instructions for clarity ([43975bc](https://github.com/clcmo/urban-neon-clean-theme/commit/43975bc70e12c10ad8df671572475cd6eb11ce1f))
+
 ## [1.1.0](https://github.com/clcmo/urban-neon-clean-theme/compare/v1.0.0...v1.1.0) (2026-11-23)
 
 
