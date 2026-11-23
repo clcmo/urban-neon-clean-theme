@@ -4,12 +4,12 @@
 
 # Título do Projeto
 
-[![License](https://img.shields.io/github/license/clcmo/template?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/clcmo/template?style=for-the-badge)](https://github.com/clcmo/template/releases)
-[![CI](https://img.shields.io/github/actions/workflow/status/clcmo/template/ci.yml?style=for-the-badge&label=CI)](https://github.com/clcmo/template/actions/workflows/ci.yml)
-[![Stars](https://img.shields.io/github/stars/clcmo/template?style=for-the-badge)](https://github.com/clcmo/template/stargazers)
-[![Forks](https://img.shields.io/github/forks/clcmo/template?style=for-the-badge)](https://github.com/clcmo/template/network)
-[![Issues](https://img.shields.io/github/issues/clcmo/template?style=for-the-badge)](https://github.com/clcmo/template/issues)
+[![License](https://img.shields.io/github/license/clcmo/urban-vs-theme?style=for-the-badge)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/clcmo/urban-vs-theme?style=for-the-badge)](https://github.com/clcmo/urban-vs-theme/releases)
+[![CI](https://img.shields.io/github/actions/workflow/status/clcmo/urban-vs-theme/ci.yml?style=for-the-badge&label=CI)](https://github.com/clcmo/urban-vs-theme/actions/workflows/ci.yml)
+[![Stars](https://img.shields.io/github/stars/clcmo/urban-vs-theme?style=for-the-badge)](https://github.com/clcmo/urban-vs-theme/stargazers)
+[![Forks](https://img.shields.io/github/forks/clcmo/urban-vs-theme?style=for-the-badge)](https://github.com/clcmo/urban-vs-theme/network)
+[![Issues](https://img.shields.io/github/issues/clcmo/urban-vs-theme?style=for-the-badge)](https://github.com/clcmo/urban-vs-theme/issues)
 [![Sponsors](https://img.shields.io/github/sponsors/clcmo?style=for-the-badge&color=pink)](https://github.com/sponsors/clcmo)
 
 Descrição breve do projeto.
@@ -31,7 +31,7 @@ Descrição breve do projeto.
 5. Escreva commits no padrão [Conventional Commits](https://www.conventionalcommits.org/pt-br/) (`feat:`, `fix:`). Commits de funcionalidade ou correção podem gerar tags de versão e releases com notas no GitHub.
 6. Apague esta seção.
 
-Site publicado: https://clcmo.github.io/template/
+Site publicado: https://clcmo.github.io/urban-vs-theme/
 
 ## Começando
 
