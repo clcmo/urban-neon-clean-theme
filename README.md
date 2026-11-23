@@ -2,52 +2,77 @@
 
 🇧🇷 **Português** | 🇺🇸 [English](README.en.md)
 
-# Título do Projeto
+# Urban Neon (Tema para VS Code)
 
-[![License](https://img.shields.io/github/license/clcmo/urban-vs-theme?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/clcmo/urban-vs-theme?style=for-the-badge)](https://github.com/clcmo/urban-vs-theme/releases)
-[![CI](https://img.shields.io/github/actions/workflow/status/clcmo/urban-vs-theme/ci.yml?style=for-the-badge&label=CI)](https://github.com/clcmo/urban-vs-theme/actions/workflows/ci.yml)
-[![Stars](https://img.shields.io/github/stars/clcmo/urban-vs-theme?style=for-the-badge)](https://github.com/clcmo/urban-vs-theme/stargazers)
-[![Forks](https://img.shields.io/github/forks/clcmo/urban-vs-theme?style=for-the-badge)](https://github.com/clcmo/urban-vs-theme/network)
-[![Issues](https://img.shields.io/github/issues/clcmo/urban-vs-theme?style=for-the-badge)](https://github.com/clcmo/urban-vs-theme/issues)
+[![License](https://img.shields.io/github/license/clcmo/urban-neon-clean-theme?style=for-the-badge)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/clcmo/urban-neon-clean-theme?style=for-the-badge)](https://github.com/clcmo/urban-neon-clean-theme/releases)
+[![CI](https://img.shields.io/github/actions/workflow/status/clcmo/urban-neon-clean-theme/ci.yml?style=for-the-badge&label=CI)](https://github.com/clcmo/urban-neon-clean-theme/actions/workflows/ci.yml)
+[![Stars](https://img.shields.io/github/stars/clcmo/urban-neon-clean-theme?style=for-the-badge)](https://github.com/clcmo/urban-neon-clean-theme/stargazers)
+[![Forks](https://img.shields.io/github/forks/clcmo/urban-neon-clean-theme?style=for-the-badge)](https://github.com/clcmo/urban-neon-clean-theme/network)
+[![Issues](https://img.shields.io/github/issues/clcmo/urban-neon-clean-theme?style=for-the-badge)](https://github.com/clcmo/urban-neon-clean-theme/issues)
 [![Sponsors](https://img.shields.io/github/sponsors/clcmo?style=for-the-badge&color=pink)](https://github.com/sponsors/clcmo)
 
-Descrição breve do projeto.
+Tema criado com arquitetura clean
 
 ## Índice
 
-- [Usando este template](#usando-este-template)
+- [Usando este tema](#usando-este-tema)
 - [Começando](#começando)
 - [Uso](#uso)
 - [Contribuindo](#contribuindo)
 - [Licença](#licença)
 
-## Usando este template
+Site publicado: https://clcmo.github.io/urban-neon-clean-theme/
 
-1. Clique em **Use this template** e crie o seu repositório.
-2. Em **Settings → Pages**, escolha **GitHub Actions** como fonte.
-3. Em **Settings → Actions → General → Workflow permissions**, marque **Read and write permissions**.
-4. Edite `content/pt-br.md` e `content/en.md`. O `README.md`, o `README.en.md` e o site do GitHub Pages são gerados a partir deles.
-5. Escreva commits no padrão [Conventional Commits](https://www.conventionalcommits.org/pt-br/) (`feat:`, `fix:`). Commits de funcionalidade ou correção podem gerar tags de versão e releases com notas no GitHub.
-6. Apague esta seção.
+## Usando este tema
 
-Site publicado: https://clcmo.github.io/urban-vs-theme/
+O tema pode ser instalado pela seção de Releases ou diretamente pela fonte do projeto.
 
 ## Começando
 
-Instruções para iniciar o projeto localmente.
+Este é um tema criado com a arquitetura clean, para estilizar a sua jornada dev no VS Code.
 
 ### Pré-requisitos
 
-Lista de pré-requisitos necessários para executar o projeto.
+- Visual Studio Code 1.85 ou superior
+- Node.js 22 ou superior
+- npm
 
 ### Instalação
 
-Passos para instalar o projeto.
+1. Baixe o arquivo `.vsix` da seção [Releases](https://github.com/clcmo/urban-neon-clean-theme/releases).
+2. No VS Code, abra a paleta de comandos com `Ctrl+Shift+P` no Windows/Linux ou `Cmd+Shift+P` no macOS.
+3. Execute **Extensions: Install from VSIX...** e selecione o arquivo baixado.
+4. Reinicie o VS Code, se necessário.
+
+Para instalar uma versão local clonada do projeto:
+
+```bash
+git clone https://github.com/clcmo/urban-neon-clean-theme.git
+cd urban-neon-clean-theme
+npm ci
+npm run build:themes
+npm run package:vsix
+code --install-extension urban-neon-clean-theme-0.1.0.vsix
+```
 
 ## Uso
 
-Instruções e exemplos de como usar o projeto.
+1. Abra a paleta de comandos.
+2. Execute **Preferences: Color Theme**.
+3. Selecione **Urban Neon Dark** ou **Urban Neon Light**.
+
+Você também pode abrir o seletor rapidamente com `Ctrl+K Ctrl+T` no Windows/Linux ou `Cmd+K Cmd+T` no macOS.
+
+### Desenvolvimento
+
+Edite as paletas em `src/infrastructure/palettes/` e execute:
+
+```bash
+npm run build:themes
+```
+
+O tema escuro e o tema claro serão gerados em `themes/`.
 
 ## Contribuindo
 

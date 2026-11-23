@@ -1,10 +1,14 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { ThemeArtifact } from "../domain/ThemeModels.js";
-import { ThemeWriter } from "../domain/ThemeWriter.js";
+import type { ThemeArtifact } from "../domain/ThemeModels.ts";
+import type { ThemeWriter } from "../domain/ThemeWriter.ts";
 
 export class FileSystemThemeWriter implements ThemeWriter {
-  constructor(private readonly outputDir: string) {}
+  private readonly outputDir: string;
+
+  constructor(outputDir: string) {
+    this.outputDir = outputDir;
+  }
 
   async write(artifact: ThemeArtifact): Promise<void> {
     await mkdir(this.outputDir, { recursive: true });

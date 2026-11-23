@@ -1,6 +1,6 @@
-import { ContrastValidator } from "../domain/ContrastValidator.js";
-import { ColorPalette, ThemeAppearance, ThemeArtifact } from "../domain/ThemeModels.js";
-import { ThemeWriter } from "../domain/ThemeWriter.js";
+import { ContrastValidator } from "../domain/ContrastValidator.ts";
+import type { ColorPalette, ThemeAppearance, ThemeArtifact } from "../domain/ThemeModels.ts";
+import type { ThemeWriter } from "../domain/ThemeWriter.ts";
 
 export interface PaletteInput {
   appearance: ThemeAppearance;
@@ -10,7 +10,11 @@ export interface PaletteInput {
 }
 
 export class BuildThemesUseCase {
-  constructor(private readonly writer: ThemeWriter) {}
+  private readonly writer: ThemeWriter;
+
+  constructor(writer: ThemeWriter) {
+    this.writer = writer;
+  }
 
   async execute(inputs: PaletteInput[]): Promise<void> {
     for (const input of inputs) {

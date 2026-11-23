@@ -1,4 +1,4 @@
-import { ColorPalette } from "../../domain/ThemeModels.js";
+import type { ColorPalette } from "../../domain/ThemeModels.ts";
 
 export const darkPalette: ColorPalette = {
   bgPrimary: "#0a0a0c",

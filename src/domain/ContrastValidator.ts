@@ -1,4 +1,4 @@
-import { ColorPalette } from "./ThemeModels.js";
+import type { ColorPalette } from "./ThemeModels.ts";
 
 export class ContrastValidator {
   static validatePalette(label: string, palette: ColorPalette): void {

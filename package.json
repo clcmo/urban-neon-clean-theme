@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "publisher": "clcmo",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/clcmo/vscode-theme-clean-arch.git"
@@ -30,6 +31,7 @@
     ]
   },
   "scripts": {
+    "build:readme": "node scripts/build-readme.mjs",
     "build:themes": "node --experimental-strip-types src/cli/build.ts",
     "package:vsix": "npx @vscode/vsce package --no-dependencies",
     "release:dry-run": "npx release-please release-pr --dry-run --repo-url=https://github.com/clcmo/vscode-theme-clean-arch --token=${GITHUB_TOKEN:-local}"

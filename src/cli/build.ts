@@ -1,8 +1,8 @@
 import { resolve } from "node:path";
-import { BuildThemesUseCase } from "../application/BuildThemesUseCase.js";
-import { FileSystemThemeWriter } from "../infrastructure/FileSystemThemeWriter.js";
-import { darkPalette } from "../infrastructure/palettes/darkPalette.js";
-import { lightPalette } from "../infrastructure/palettes/lightPalette.js";
+import { BuildThemesUseCase } from "../application/BuildThemesUseCase.ts";
+import { FileSystemThemeWriter } from "../infrastructure/FileSystemThemeWriter.ts";
+import { darkPalette } from "../infrastructure/palettes/darkPalette.ts";
+import { lightPalette } from "../infrastructure/palettes/lightPalette.ts";
 
 async function main() {
   const themesDir = resolve("themes");

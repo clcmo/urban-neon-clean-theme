@@ -1,0 +1,143 @@
+{
+  "name": "Urban Neon Light",
+  "type": "light",
+  "semanticHighlighting": true,
+  "colors": {
+    "editor.background": "#faf9fc",
+    "editor.foreground": "#141622",
+    "editor.selectionBackground": "#dcd5ec",
+    "editor.lineHighlightBackground": "#f0eef6",
+    "editorCursor.foreground": "#006975",
+    "editorLineNumber.foreground": "#5e647a",
+    "editorLineNumber.activeForeground": "#006975",
+    "editorBracketMatch.background": "#dcd5ec",
+    "editorBracketMatch.border": "#b50763",
+    "activityBar.background": "#e6e2f0",
+    "activityBar.foreground": "#141622",
+    "activityBar.activeBorder": "#b50763",
+    "sideBar.background": "#f0eef6",
+    "sideBar.foreground": "#32374d",
+    "sideBar.border": "#d5cfe3",
+    "editorGroupHeader.tabsBackground": "#f0eef6",
+    "tab.activeBackground": "#faf9fc",
+    "tab.activeForeground": "#141622",
+    "tab.activeBorderTop": "#b50763",
+    "tab.inactiveBackground": "#f0eef6",
+    "tab.inactiveForeground": "#5e647a",
+    "statusBar.background": "#e6e2f0",
+    "statusBar.foreground": "#141622",
+    "editorSuggestWidget.background": "#e6e2f0",
+    "editorSuggestWidget.border": "#d5cfe3",
+    "editorSuggestWidget.foreground": "#141622",
+    "editorSuggestWidget.selectedBackground": "#dcd5ec",
+    "editorSuggestWidget.highlightForeground": "#006975",
+    "editorHoverWidget.background": "#e6e2f0",
+    "editorHoverWidget.border": "#d5cfe3",
+    "gitDecoration.addedResourceForeground": "#166534",
+    "gitDecoration.modifiedResourceForeground": "#855800",
+    "gitDecoration.deletedResourceForeground": "#b91c1c",
+    "gitDecoration.untrackedResourceForeground": "#006975",
+    "editorGutter.addedBackground": "#166534",
+    "editorGutter.modifiedBackground": "#855800",
+    "editorGutter.deletedBackground": "#b91c1c",
+    "diffEditor.insertedTextBackground": "#16653424",
+    "diffEditor.removedTextBackground": "#b91c1c24",
+    "terminal.background": "#faf9fc",
+    "terminal.foreground": "#141622",
+    "terminalCursor.foreground": "#b50763",
+    "terminal.ansiBlack": "#e6e2f0",
+    "terminal.ansiRed": "#b91c1c",
+    "terminal.ansiGreen": "#166534",
+    "terminal.ansiYellow": "#855800",
+    "terminal.ansiBlue": "#1d4ed8",
+    "terminal.ansiMagenta": "#b50763",
+    "terminal.ansiCyan": "#006975",
+    "terminal.ansiWhite": "#141622"
+  },
+  "tokenColors": [
+    {
+      "name": "Comments",
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#5e647a",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Keywords & Control Flow",
+      "scope": [
+        "keyword",
+        "keyword.control",
+        "storage.type",
+        "storage.modifier"
+      ],
+      "settings": {
+        "foreground": "#b50763",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Strings & Template Literals",
+      "scope": [
+        "string",
+        "punctuation.definition.string"
+      ],
+      "settings": {
+        "foreground": "#006975"
+      }
+    },
+    {
+      "name": "Functions & Methods",
+      "scope": [
+        "entity.name.function",
+        "support.function"
+      ],
+      "settings": {
+        "foreground": "#855800"
+      }
+    },
+    {
+      "name": "Classes, Interfaces & Types",
+      "scope": [
+        "entity.name.class",
+        "entity.name.type",
+        "support.class",
+        "support.type"
+      ],
+      "settings": {
+        "foreground": "#1d4ed8"
+      }
+    },
+    {
+      "name": "Numbers, Booleans & Constants",
+      "scope": [
+        "constant.numeric",
+        "constant.language",
+        "variable.other.constant"
+      ],
+      "settings": {
+        "foreground": "#166534"
+      }
+    }
+  ],
+  "semanticTokenColors": {
+    "function": "#855800",
+    "method": "#855800",
+    "class": "#1d4ed8",
+    "interface": {
+      "foreground": "#1d4ed8",
+      "fontStyle": "italic"
+    },
+    "type": "#1d4ed8",
+    "enumMember": "#166534",
+    "variable.readonly": "#166534",
+    "parameter": {
+      "foreground": "#32374d",
+      "fontStyle": "italic"
+    },
+    "property": "#141622"
+  }
+}

@@ -1,35 +1,61 @@
 ---
-title: Título do Projeto
-description: Descrição breve do projeto.
+title: Urban Neon (Tema para VS Code)
+description: Tema criado com arquitetura clean
 toc: Índice
 ---
 
-## Usando este template
-
-1. Clique em **Use this template** e crie o seu repositório.
-2. Em **Settings → Pages**, escolha **GitHub Actions** como fonte.
-3. Em **Settings → Actions → General → Workflow permissions**, marque **Read and write permissions**.
-4. Edite `content/pt-br.md` e `content/en.md`. O `README.md`, o `README.en.md` e o site do GitHub Pages são gerados a partir deles.
-5. Escreva commits no padrão [Conventional Commits](https://www.conventionalcommits.org/pt-br/) (`feat:`, `fix:`). Commits de funcionalidade ou correção podem gerar tags de versão e releases com notas no GitHub.
-6. Apague esta seção.
 
 Site publicado: {{PAGES_URL}}
 
+## Usando este tema
+
+O tema pode ser instalado pela seção de Releases ou diretamente pela fonte do projeto.
+
 ## Começando
 
-Instruções para iniciar o projeto localmente.
+Este é um tema criado com a arquitetura clean, para estilizar a sua jornada dev no VS Code.
 
 ### Pré-requisitos
 
-Lista de pré-requisitos necessários para executar o projeto.
+- Visual Studio Code 1.85 ou superior
+- Node.js 22 ou superior
+- npm
 
 ### Instalação
 
-Passos para instalar o projeto.
+1. Baixe o arquivo `.vsix` da seção [Releases](https://github.com/clcmo/urban-neon-clean-theme/releases).
+2. No VS Code, abra a paleta de comandos com `Ctrl+Shift+P` no Windows/Linux ou `Cmd+Shift+P` no macOS.
+3. Execute **Extensions: Install from VSIX...** e selecione o arquivo baixado.
+4. Reinicie o VS Code, se necessário.
+
+Para instalar uma versão local clonada do projeto:
+
+```bash
+git clone https://github.com/clcmo/urban-neon-clean-theme.git
+cd urban-neon-clean-theme
+npm ci
+npm run build:themes
+npm run package:vsix
+code --install-extension urban-neon-clean-theme-0.1.0.vsix
+```
 
 ## Uso
 
-Instruções e exemplos de como usar o projeto.
+1. Abra a paleta de comandos.
+2. Execute **Preferences: Color Theme**.
+3. Selecione **Urban Neon Dark** ou **Urban Neon Light**.
+
+Você também pode abrir o seletor rapidamente com `Ctrl+K Ctrl+T` no Windows/Linux ou `Cmd+K Cmd+T` no macOS.
+
+### Desenvolvimento
+
+Edite as paletas em `src/infrastructure/palettes/` e execute:
+
+```bash
+npm run build:themes
+```
+
+O tema escuro e o tema claro serão gerados em `themes/`.
 
 ## Contribuindo
 

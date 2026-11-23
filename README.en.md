@@ -4,12 +4,12 @@
 
 # Project Title
 
-[![License](https://img.shields.io/github/license/clcmo/urban-vs-theme?style=for-the-badge)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/clcmo/urban-vs-theme?style=for-the-badge)](https://github.com/clcmo/urban-vs-theme/releases)
-[![CI](https://img.shields.io/github/actions/workflow/status/clcmo/urban-vs-theme/ci.yml?style=for-the-badge&label=CI)](https://github.com/clcmo/urban-vs-theme/actions/workflows/ci.yml)
-[![Stars](https://img.shields.io/github/stars/clcmo/urban-vs-theme?style=for-the-badge)](https://github.com/clcmo/urban-vs-theme/stargazers)
-[![Forks](https://img.shields.io/github/forks/clcmo/urban-vs-theme?style=for-the-badge)](https://github.com/clcmo/urban-vs-theme/network)
-[![Issues](https://img.shields.io/github/issues/clcmo/urban-vs-theme?style=for-the-badge)](https://github.com/clcmo/urban-vs-theme/issues)
+[![License](https://img.shields.io/github/license/clcmo/urban-neon-clean-theme?style=for-the-badge)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/clcmo/urban-neon-clean-theme?style=for-the-badge)](https://github.com/clcmo/urban-neon-clean-theme/releases)
+[![CI](https://img.shields.io/github/actions/workflow/status/clcmo/urban-neon-clean-theme/ci.yml?style=for-the-badge&label=CI)](https://github.com/clcmo/urban-neon-clean-theme/actions/workflows/ci.yml)
+[![Stars](https://img.shields.io/github/stars/clcmo/urban-neon-clean-theme?style=for-the-badge)](https://github.com/clcmo/urban-neon-clean-theme/stargazers)
+[![Forks](https://img.shields.io/github/forks/clcmo/urban-neon-clean-theme?style=for-the-badge)](https://github.com/clcmo/urban-neon-clean-theme/network)
+[![Issues](https://img.shields.io/github/issues/clcmo/urban-neon-clean-theme?style=for-the-badge)](https://github.com/clcmo/urban-neon-clean-theme/issues)
 [![Sponsors](https://img.shields.io/github/sponsors/clcmo?style=for-the-badge&color=pink)](https://github.com/sponsors/clcmo)
 
 Short description of the project.
@@ -31,7 +31,7 @@ Short description of the project.
 5. Write commits following [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`). Feature and fix commits can create version tags and releases with notes on GitHub.
 6. Delete this section.
 
-Published site: https://clcmo.github.io/urban-vs-theme/
+Published site: https://clcmo.github.io/urban-neon-clean-theme/
 
 ## Getting started
 
