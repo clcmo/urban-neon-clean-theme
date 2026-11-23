@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.0](https://github.com/clcmo/urban-neon-clean-theme/compare/v1.0.0...v1.1.0) (2026-11-23)
+
+
+### Features
+
+* add build scripts for README and site generation ([5b16537](https://github.com/clcmo/urban-neon-clean-theme/commit/5b1653799dfffebba00f94dc008952118e92ec51))
+* add PNG icon generation and integration tests for theme writer ([05cafa4](https://github.com/clcmo/urban-neon-clean-theme/commit/05cafa4bc91f679e81df5a7da73f5084f0351e6d))
+* enhance theme building with new color settings and testing framework ([e65edcb](https://github.com/clcmo/urban-neon-clean-theme/commit/e65edcb1cf38c67fba4085979835e4669ae2d1fe))
+* update Open VSX publishing step to use trusted publishing ([35a22ed](https://github.com/clcmo/urban-neon-clean-theme/commit/35a22edce567f8b1cb9868f9422075b7397f2886))
+
+
+### Bug Fixes
+
+* corrige lockfile, CI e fluxo de release ([09344fb](https://github.com/clcmo/urban-neon-clean-theme/commit/09344fb4aded6c1e8e964f46945becf77dd0a215))
+
 ## 1.0.0 (2026-11-23)
 
 
