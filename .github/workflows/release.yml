@@ -64,4 +64,6 @@ jobs:
         run: npx @vscode/vsce publish --oidc --packagePath dist/urban-neon-clean-theme.vsix
 
       - name: Publicar no Open VSX
-        run: npx ovsx publish --trusted-publishing dist/urban-neon-clean-theme.vsix
+        env:
+          OVSX_PAT: ${{ secrets.OPENVSX_PAT }}
+        run: npx ovsx --pat "$OVSX_PAT" publish dist/urban-neon-clean-theme.vsix
