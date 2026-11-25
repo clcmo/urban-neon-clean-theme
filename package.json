@@ -2,7 +2,7 @@
   "name": "urban-neon-clean-theme",
   "displayName": "Urban Neon Clean Theme (Dark & Light)",
   "description": "Temas Dark e Light para VS Code com contraste WCAG validado e Clean Architecture.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "publisher": "clcmo",
   "license": "MIT",
   "type": "module",

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/clcmo/urban-neon-clean-theme/compare/v1.1.1...v1.1.2) (2026-11-25)
+
+
+### Bug Fixes
+
+* update Open VSX publishing step to use authentication token ([12e7789](https://github.com/clcmo/urban-neon-clean-theme/commit/12e7789e8022bcef1f49063561d97ad6591e8a92))
+
 ## [1.1.1](https://github.com/clcmo/urban-neon-clean-theme/compare/v1.1.0...v1.1.1) (2026-11-23)
 
 
